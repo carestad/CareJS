@@ -1,0 +1,3 @@
+· Implement a repeat-function for repeating a request at a given interval
+· Implement timeout limit for requests
+· Implement a cancel function for requests
