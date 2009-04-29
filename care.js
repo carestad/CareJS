@@ -8,6 +8,7 @@ var care = {
         XHReq.open(type, config.url, true);
 
         XHReq.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        XHReq.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
 
         XHReq.onreadystatechange = function() {
             if (XHReq.readyState == 4) {
