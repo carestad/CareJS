@@ -1,14 +1,10 @@
-CareJS - The straightforward AJAX javascript framework
+# CareJS
+## The straightforward AJAX javascript framework
 
-------
-How to do a GET request:
+---
+### GET request
 
-<script type="text/javascript" src="care.js"></script>
-<script type="text/javascript">
-function foo(data, args) {
-    // do stuff
-}
-
+`
 care.xGet({
     url: 'http://example.com/somefile',
     vars: {
@@ -21,16 +17,13 @@ care.xGet({
         accept: 'application/xml'
     }
 });
+`
 
-------
-How to do a JSONP request
 
-<script type="text/javascript" src="care.js"></script>
-<script type="text/javascript">
-function foo(data) {
-    // the data-variable contains the returning JSON data
-}
+---
+### JSONP request
 
+`
 care.jsonp({
     url: 'http://example.com/somefile.php',
     vars: {
@@ -43,3 +36,4 @@ care.jsonp({
         accept: 'application/xml'
     }
 });
+`
