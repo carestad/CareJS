@@ -16,7 +16,7 @@ care.xGet({
         arg2: 'bar
     },
     handleAs: 'json',
-    handler: foo
+    handler: foo,
 });
 
 ------
@@ -35,5 +35,8 @@ care.jsonp({
         arg2: 'bar'
     },
     jsonp: 'callback',
-    handler: foo
+    handler: foo,
+    headers: {
+        accept: 'application/xml'
+    }
 });

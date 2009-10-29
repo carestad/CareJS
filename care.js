@@ -10,6 +10,9 @@ var care = {
         XHReq.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
         XHReq.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
 
+        if (config.headers.accept)
+            XHReq.setRequestHeader('Accept', config.headers.accept);
+
         XHReq.onreadystatechange = function() {
             if (XHReq.readyState == 4) {
                 var ioArgs = {
