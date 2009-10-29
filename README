@@ -17,6 +17,9 @@ care.xGet({
     },
     handleAs: 'json',
     handler: foo,
+    headers: {
+        accept: 'application/xml'
+    }
 });
 
 ------
